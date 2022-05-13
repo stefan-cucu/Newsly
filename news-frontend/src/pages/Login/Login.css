@@ -1,0 +1,122 @@
+.Login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.Login > form {
+  width: 300px;
+  height: 500px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+  background-color: #2e82fd;
+  color: #eee;
+}
+
+.header > img {
+  height: 120px;
+  opacity: 0.09;
+}
+
+.header > h1 {
+  margin-left: 5px;
+}
+
+.input {
+  position: relative;
+  width: 265px;
+  margin-top: 25px;
+}
+
+.input > input,select {
+  width: 240px;
+  height: 36px;
+  display: block;
+  border: 1px solid #ededed;
+  border-radius: 4px;
+  padding-left: 20px;
+  transition: 0.2s ease-out;
+  color: darken(#ededed, 30%);
+}
+
+.input > select {
+  width: 264px;
+}
+
+.input > input:focus {
+  outline: 0;
+  padding-left: 5px;
+  padding-right: 16px;
+  border-color: #2e82fd;
+}
+
+.input > svg,
+.input > span > svg {
+  height: 15px;
+  width: 15px;
+  opacity: 0.5;
+
+  position: absolute;
+  left: 2.5px;
+  top: 10.5px;
+  z-index: 10;
+  transition: 0.2s ease-out;
+}
+
+.input > input:focus + svg,
+.input > input:focus + span > svg {
+  opacity: 0;
+  transition: 0.2s ease-out;
+}
+
+.Login > form > a {
+  font-size: 16px;
+}
+
+.Login > form > button {
+  width: 45px;
+  height: 45px;
+  margin-top: 25px;
+  display: block;
+  background: #fff;
+  border-radius: 100%;
+  border: 1px solid #2e82fd;
+  color: #2e82fd;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px 7px #fff;
+  transition: 0.2s ease-out;
+}
+
+.Login > form > button:hover,
+.Login > form > button:focus {
+  background: #2e82fd;
+  color: #fff;
+  outline: 0;
+}
+
+.error-box {
+  width: 90%;
+  min-height: 50px;
+  margin-top: 25px;
+  background-color: #f8d7da;
+  color: #721c24;
+  border-radius: 5px;
+  border: 1px solid #f5c6cb;
+}
